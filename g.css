@@ -1,0 +1,188 @@
+body {
+    padding: 20px;
+    min-height: 150vh;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #161515;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-style: oblique;
+   line-height: 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #161515;
+    margin-bottom: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.movie-detail {
+    margin-top: 20px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.info-block {
+    padding: 20px;
+    border: 1px solid #161515;
+    border-radius: 8px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #161515;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #161515;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        margin: 0 auto;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        font-size: 20px;
+    }
+
+    .profile-section,
+    .info-section {
+        gap: 15px;
+    }
+}
+
+.none{
+    height: 300px;
+    width: 300px;
+   
+}
+
+.div-1{
+    display: grid;
+    grid-template-columns: 300px  1fr;
+    grid-template-rows: 1fr;
+    line-height: normal;
+    column-gap: 56px;
+    font-style: oblique;
+   
+    font-size: 20px;
+    line-height: 30px;
+   
+}
+
+.div-mail{
+    border: 1px solid #161515;
+}
+
+
